@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- BOOTSTRAP LINK FOR CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+        <!-- LINK TO CSS STYLESHEET -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- LINK TO JS LOGINSHEET -->
+        <script defer src="loginjs.js"></script>
+    <title>CV Helena</title>
+</head>
+<body>
+    <div class="sticky-top">
+    <!-- NAVBAR BELOW   -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">Home</a>
+            <button class="navbar-toggler" 
+            type="toggler" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu">
+             <!-- HAMBURGER ICON   -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" >Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./game.html" class="nav-link" onclick="alert('Game on!')">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+        <!-- HERO CAROUSEL -->
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-2">
+                <p> </p>
+                </div>
+        <div class="col-8">
+            <!-- CAPTIONS FOR CAROUSEL -->
+            <div id="cvCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#cvCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#cvCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#cvCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/dollar-gill-0V7_N62zZcU-unsplash-476-250w.png" class="d-block w-100" alt="Bookshelf Project">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bookshelf Project</h5>
+                      <p>ASP.NET Web application | Team Projekt</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/towfiqu-barbhuiya-xkArbdUcUeE-unsplash-474-250w.png" class="d-block w-100" alt="Payroll Project">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Payroll Project</h5>
+                      <p>Salary Calculation Application for Employees and Consultants | Individual Project</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/auction-wood-3.png" class="d-block w-100" alt="Auction Project">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Auction Project</h5>
+                      <p>Backend for Auction Site with Web Api to Database | Team Project</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cvCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cvCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="col-2">
+        <p> </p>
+        </div>
+        <!-- SHOWCASE: CV INTRO -->
+<div class="container text-center bg-dark text-light">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-6">
+      <h1>Helena Klättborg Sveding</h1>
+      <h6> Cloud Developer Student </h6> 
+      <p>
+          <span class="text-warning">Open for Internship!</span>
+      </p>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+<!-- MODAL LOGIN -->
+<section class="bg-dark text-warning p-5">
+    <div class="container">
+        <button type="button" class="btn-outline-dark"
+        data-bs-toggle="modal" data-bs-target="#login" id="firstLoginBtn" onclick="this.innerHTML='Welcome'">
+        Login for Access to More Resources 
+        </button>
+        <div id="login" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close btn-close-white">
+                        </button>
+                        <div class="loginform bg-dark">
+                            <h3 class="text-center" id="loginChange">Login to access projects</h3>
+                            <form action="#">
+                                <div class="mb-3 mt-3">
+                                    <label for="userName" id="userName">Username</label>
+                                    <input type="userName" class="form-control" id="userNameInput">
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="password" id="password">Password</label>
+                                    <input type="password" class="form-control" id="passwordInput">
+                                </div>
+                                <button id="submitBtn" type="button" class="btn btn-light mt-3">Submit
+                                </button>
+                                <p>First Time User <a href="#">(Fake) Sign Up</a> </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- ACCORDION WITH EXPERIENCE SECTION -->
+<section id="experience" class="p-5">
+    <div class="container">
+        <h2 class="text-center mb-4"> Experience </h2>
+        <div class="accordion accordion-flush" id="experience">
+             <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#experience-one" >
+                Coding Projects @Github
+                </button>
+              </h2>
+              <div id="experience-one" 
+              class="accordion-collapse collapse" 
+              data-bs-parent="#experience">
+              <div class="accordion-body">2022-2023 | Coding projects, both backend and frontend, can be seen at https://github.com/githsharp.
+            </div>
+            </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#experience-two" >
+                Cloud Developer @Jensen Yrkeshögskola
+                </button>
+              </h2>
+              <div id="experience-two" 
+              class="accordion-collapse collapse" 
+              data-bs-parent="#experience">
+              <div class="accordion-body">2022-2024 | Aquiring the skillset for a Cloud Developer 
+                with aspects like Object Oriented Programming, C#, .NET, SQL, Microsoft Azure, 
+                adding some Frontend like Javascript, React as well as development models such as waterfall, agile and dev ops.
+            </div>
+            </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#experience-three" >
+                  ABM Manager @Autodesk
+                  </button>
+                </h2>
+                <div id="experience-three" 
+                class="accordion-collapse collapse" 
+                data-bs-parent="#experience">
+                <div class="accordion-body">2018-2022 | Planning, executing and follow up a marketing strategy for the Nordic region covering the Architecture, Engineering, Construction (AEC) industries.
+                </div>
+              </div>
+              </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#experience-four" >
+                  Group B2B Marketing Manager @EasyPark
+                  </button>
+                </h2>
+                <div id="experience-four" 
+                class="accordion-collapse collapse" 
+                data-bs-parent="#experience">
+                <div class="accordion-body">2017-2018 | Planning, executing and follow up a marketing strategy for the EasyPark group.
+                </div>
+                </div>
+              </div>
+              <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#experience-five">
+                Marketing Manager @Vendemore
+              </button>
+            </h2>
+            <div
+              id="experience-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experience">
+              <div class="accordion-body"> 2015-2017 | Planning, executing and follow up a marketing strategy.
+              </div>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#experience-six">
+                Marketing Infrastructure Manager @Siemens Industry Software
+              </button>
+            </h2>
+            <div
+              id="experience-six"
+              class="accordion-collapse collapse"
+              data-bs-parent="#experience">
+              <div class="accordion-body"> 1998-2015 | Marketing Infrastructure Manager, Northern Europe | 2009 – 2015
+                Global Team Leader, Online Marketing | 2010 – 2010
+                e-Marketing and Communication, Nordic Operation | 2008 – 2009
+                Key Account Manager | 2004 – 2008
+                Marketing Communication, Nordic Operation |1998 – 2004
+                .
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+    <!-- CONTACT INFO -->
+<section id="contact" class="p-5">
+    <div class="class-container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4"> Contact Info</h2>
+                <ul class="li-group list-group-flush lead">
+                    <li class="list-group item">
+                        <span class="fw-bold">Name:</span>
+                        Helena Klättborg Sveding
+                    </li>
+                    <li class="list-group item">
+                        <span class="fw-bold">Location:</span>
+                        Stockholm, Sweden
+                    </li>
+                    <li class="list-group item">
+                        <span class="fw-bold">Email:</span>
+                        <a href="mailto:helena.sveding@gmail.com">Email me for a chat!</a>
+                    </li>
+                    <li class="list-group item">
+                        <span class="fw-bold">Github:</span>
+                        <a href="https://github.com/githsharp">Visit my profile at Github</a> 
+                    </li>
+                    <li class="list-group item">
+                        <span class="fw-bold">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/helenasveding/">Visit my profile at LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+            <p>Copyright &copy; 2023 Helena K Sveding "We do not collect cookies so you can keep yours"</p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5"> </a>
+        </div>
+      </footer>
+    <!-- BOOTSTRAP LINK FOR JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>  
+</body>
+</html>

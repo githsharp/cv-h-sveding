@@ -1,0 +1,114 @@
+html{
+    background-color: black;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+/* .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+
+.h3{
+    text-align: center;
+}
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    /* klipper till rätt ratio - tydligen underifrån */
+    object-fit: cover;
+}
+
+.class-container{
+    font-size: 10rem;
+    /* background-color:goldenrod; */
+}
+
+.container-fluid{
+    background-color: black;
+}
+
+/* .container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+} */
+
+/* .container{
+    justify-content: center;
+} */
+
+/* CAN I HAVE TWO CONTAINERS WITH DIFFERENT CONSTRAINTS?  */
+/*  MÅSTE GE DE OLIKA NAMN ATT KUNNA REFERERA TILL */
+/* .container-fluid{
+    justify-content: center;
+} */
+ 
+
+.loginform{
+    max-width: 100%;
+    padding: 2em;
+    color: #fff;
+    box-shadow: 0px 4px 6px 0px rgba(22, 22, 26, 0.18);
+    @media(max-width: 576px){
+        max-width: 90%
+        margin: 0px auto;
+    }
+}
+
+/*  KANSKE SKA DET ISTÄLLET VARA .login OVAN */
+
+.modal-body{
+    padding: 0px;
+}
+
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+
+.modal-content{
+    width: 80%;
+    margin: 0px;
+}
+
+.form-control{
+    /* background-color: inherit; */
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #111;
+}
+
+.loginform .btn{
+    width: 100%;
+    font-weight: 800;
+    background-color: #111;
+    border-radius: 0px;
+    padding: 0.5em 0;
+}
+
+.loginform .btn:Hover{
+    color: goldenrod;
+}
+
+.cvCarousel .img{
+    max-height: 200px;
+}
+
+/* .nybg{
+    background-color: goldenrod
+} */
+
+.loginClass {
+    color: goldenrod;
+  }
